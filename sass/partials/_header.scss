@@ -1,0 +1,76 @@
+@use 'colores';
+
+
+header {
+    
+    background: colores.$color-header; 
+    ul {
+        list-style: none;
+        padding-top: 40px;
+        margin-bottom: 0px;
+        a {
+            text-decoration: none;
+          }
+        .menu-li {
+            display: inline-block;
+            position: relative;
+            padding-top: 20px;
+        
+            &:hover {
+            transform: translateY(-2px);
+            transition: 0.5s;
+            } 
+        }
+        ul  {
+            position: absolute; /*submenu*/
+            display: none; 
+            li {
+                display: block; /*submenu*/
+                padding-bottom: 15px;
+            }
+        }
+        li:hover ul {
+          display:block; /*submenu*/
+        }
+    }  
+    
+    .dropdown {
+        padding: 20px 20px;
+    }
+}
+
+
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .op {
+	animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@for $i from 1 through 6 {
+        .op:nth-child(#{$i}) {
+            animation-delay: $i*0.1s;
+        }
+  }

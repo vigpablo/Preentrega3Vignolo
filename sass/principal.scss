@@ -1,0 +1,14 @@
+@use './partials/header';
+
+@use './partials/main';
+
+@use './partials/footer';
+
+@use './partials/mediaqueries';
+
+body {
+     margin-right: 0px;
+     padding-right: 0px;
+     overflow-x: hidden;
+}
+

@@ -1,0 +1,84 @@
+@use 'colores';
+
+.main-index, .main-novedades {
+    background: colores.$fondo-main;
+}
+.main-institucional {
+    background: colores.$fondo-main2;
+}
+.main-proyectos {
+    @extend .main-index;
+}
+.main-contacto {
+    @extend .main-index;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+h2 {
+    color: #778da9
+}
+label {
+    display: block;
+}
+.btn {
+    display: block;
+    margin-top: 10px;
+}
+.img {
+    padding: 60px 60px;
+    max-width: 600px;
+    max-height: 420px;
+}
+.en-venta {
+    margin-top: 100px;
+}
+.fotos {
+    margin: 0px 0px;
+}
+  
+.nosotros-institucional {
+     padding: 50px 0px 50px 150px
+}
+.fotos-personas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    row-gap: 20px;
+}
+.arquitecto {  
+    height: auto; 
+    width: auto; 
+    max-width: 600px; 
+    max-height: 600px;
+}
+.arquitectob {    
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+}
+.nosotros-p {
+    color: #e0e1dd;
+    font-style: italic;
+}
+.novedades-p {
+    color: #1b263b;
+    font-style: italic;
+}
+   
+.fotos-novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.fotonov {
+    max-width: 600px;
+    max-height: auto;
+    padding-top: 50px;
+}
+.novedades-p {
+    margin-top: 20px;
+}
+
+

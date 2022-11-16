@@ -1,0 +1,13 @@
+@use 'colores';
+
+footer {
+    background: colores.$fondo-footer;
+    padding: 80px 0px;
+    .ayp {
+        font-size: xx-large;
+        font-weight: 600;
+        }
+    ul {
+        list-style: none; 
+    }
+} 
